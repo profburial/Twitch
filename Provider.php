@@ -50,6 +50,7 @@ class Provider extends AbstractProvider implements ProviderInterface
             'https://api.twitch.tv/kraken/user?oauth_token='.$token, [
             'headers' => [
                 'Accept' => 'application/json',
+                'Client-ID' => $this->clientId,
             ],
         ]);
 
